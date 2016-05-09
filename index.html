@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="flex-container header bgimg">
+        <div class="flex-item dheader">
+            <img src="img/HTML5.png" alt="html5"/>
+        </div>
+        <div id="div_h1" class="flex-item dheader">
+            <h1>Форма прийому на роботу</h1>
+        </div>
+        <div class="flex-item dheader">
+            <img src="img/CSS3.png" id="css3" alt="css3"/>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="menu"><a href="#">Home</a></li>
+            <li class="menu"><a href="#">FAQ</a></li>
+            <li class="menu"><a href="#">Suport</a></li>
+        </ul>
+    </nav>
+    <main class="flex-container main bgimg">
+        <section class="flex-container section">
+            <article class="art article0">
+                <div class="artdiv">
+                    <p class="lb">Всі поля обов'язкові для заповнення</p>
+                </div>
+            </article>
+            <article class="flex-item article1">
+                <form id="myForm" method="post" action="">
+                <fieldset id="fs1" class="fs">
+                    <legend>особиста інформацфя</legend>
+                    <label for="surname">Ваше прізвище:</label>
+                    <br>
+                    <input type="text" name="surname" id="surname" class="lS" placeholder="Прізвище"/>
+                    <br>
+                    <label for="name">Ваше ім'я:</label>
+                    <br>
+                    <input type="text" name="name" id="name" class="lS" placeholder="Ім'я"/>
+                    <br>
+                    <label for="middlename">По батькові:</label>
+                    <br>
+                    <input type="name" name="middlename" id="middlename" class="lS" placeholder="По батькові"/>
+                    <br>
+                    <hr><br>
+                    <br> <label for="date">Дата народження:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+                    <label id="labelSex">Стать:</label>
+                    <br>
+                    <input type="date"/ id="date" class="lS">
+                    <input type="radio" name="sex" value="male" checked> чол.
+                    <input type="radio" name="sex" value="female"> жін.
+                     <br>
+                    <br>
+                <hr>
+                <br> <label>Ваша національність:</label>
+                <input type="checkbox" name="country" value="Ukraine">українець(ка)
+                <input type="checkbox" name="country" value="else"> інше
+                <br><br>
+                <hr>
+                <br>
+                <label for="textarea">Особисті якості:</label>
+                <br>
+                <br>
+                <textarea name="message" cols="30" rows="4" id="message" class="lS"></textarea>
+                </fieldset>
+            </article>
+            <article class="flex-item article2">
+                <fieldset id="fs2" class="fs">
+                    <legend>контактна інформацфя</legend>
+                    <br>
+                    <label for="tel">Номер телефону:</label>
+                    <br>
+                    <input type="tel" name="tel" id="tel" class="lS" placeholder="номер Вашого телефону">
+                    <br>
+                    <br>
+                    <hr class="hr">
+                    <label for="city">Місто проживання:</label>
+                    <br>
+                    <select id="city">
+                        <option>Львів</option>
+                        <option selected>Івано-Франківськ</option>
+                        <option>Київ</option>
+                        <option>Харків</option>
+                        <option>інше</option>
+                    </select>
+                    <br>
+                    <label for="adress">Домашня адреса:</label>
+                    <br>
+                    <input type="adress" name="adress" id="adress" class="lS" placeholder="Ваша домашня адреса">
+                    <br>
+                    <br>
+                    <hr class="hr">
+                    <br>
+                    <label for="email">Електронна адреса:</label>
+                    <br>
+                    <input type="email" name="email" id="email" class="lS" placeholder="Ваша ел. скринька"> 
+                    <br> 
+                    <input type="checkbox" name="mail" value="mail">присилати корпоративну почту
+                    <br>
+                    <br>
+                    <hr class="hr">
+                    <br>
+                    <label for="url">Сайт:</label>
+                    <br>
+                    <input type="url" name="url" id="url" class="lS" placeholder="адреса Вашого сайт">
+                    <br><br>
+                    <br>
+                </fieldset>
+            </article>
+            <article class="art article3">
+                <fieldset class="fs4">
+                    <legend> &nbsp;&nbsp;завершили анкетування ? </legend>
+                    <input type="reset" name="reset" id="reset" value="очистити">
+                    <input type="submit" name="submit" id="smb" value="відправити">
+                </fieldset>
+            </article>
+        </section>
+      <aside class="flex-item aside">
+        <form id="myForm2" >
+             <fieldset id="fs5"> 
+                <legend>Коротко про нас:</legend>
+                <img src="img/company.png" alt="">
+                <p class="about"><b>Lorem ipsum dolor</b> sit amet, consectetur <i>adipisicing elit</i>. <b>Incidunt</b>, quidem perspiciatis. Repellat ipsam eaque cumque quae <b>quibusdam</b> hic provident rem delectus tenetur, <b>assumenda accusamus</b> distinctio necessitatibus deserunt. Laboriosam nulla, inventore.</p>
+                <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Repellat necessitatibus deserunt. Laboriosam nulla, inventore. <b>Dolor sit amet</b>, consecteturadipisicing elit. <b>Incidunt</b>, quidem perspiciatis quibusdam hic. Incidunt, quidem perspiciatis.</p>
+                <p class="about">Repellat ipsam eaque cumque quae quibusdam assumenda accusamus <b>distinctio</b> necessitatibus deserunt. Laboriosam nulla, inventore.</p>
+                <p class="about">Quae quibusdam assumenda distinctio necessitatibus. Laboriosam nulla, inventore.</p>
+             </fieldset>
+        </form>
+      </aside>
+    </main>
+    <br>
+    <footer class="footer bgimg">
+        <h5>&#169 2016 v.osipov</h5>
+    </footer>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        function init() {
+            if (localStorage["name"]) {
+                $('#name').val(localStorage["name"]);
+            }
+            if (localStorage["surname"]) {
+                $('#surname').val(localStorage["surname"]);
+            }
+            if (localStorage["middlename"]) {
+                $('#middlename').val(localStorage["middlename"]);
+            }
+            if (localStorage["tel"]) {
+                $('#tel').val(localStorage["tel"]);
+            }
+            if (localStorage["message"]) {
+                $('#message').val(localStorage["message"]);
+            }
+            if (localStorage["adress"]) {
+                $('#adress').val(localStorage["adress"]);
+            }
+            if (localStorage["email"]) {
+                $('#email').val(localStorage["email"]);
+            }
+            if (localStorage["url"]) {
+                $('#url').val(localStorage["url"]);
+            }
+        } 
+        init();
+    });
+
+    $('.lS').keyup(function () {
+        localStorage[$(this).attr('name')] = $(this).val();
+    });
+    $('#reset').click(function() {
+        localStorage.clear();
+    });
+</script>
+</body>
+</html>
